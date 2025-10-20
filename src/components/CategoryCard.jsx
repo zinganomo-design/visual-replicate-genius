@@ -1,12 +1,4 @@
-import { LucideIcon } from "lucide-react";
-
-interface CategoryCardProps {
-  icon: LucideIcon;
-  title: string;
-  subtitle?: string;
-}
-
-const CategoryCard = ({ icon: Icon, title, subtitle }: CategoryCardProps) => {
+const CategoryCard = ({ icon: Icon, title, subtitle }) => {
   return (
     <div className="bg-card rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer group border border-border">
       <div className="flex flex-col items-center text-center space-y-3">

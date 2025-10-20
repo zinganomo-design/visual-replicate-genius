@@ -2,15 +2,7 @@ import { ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
-interface ProductCardProps {
-  image: string;
-  name: string;
-  description: string;
-  price: string;
-  isOutOfStock?: boolean;
-}
-
-const ProductCard = ({ image, name, description, price, isOutOfStock }: ProductCardProps) => {
+const ProductCard = ({ image, name, description, price, isOutOfStock }) => {
   return (
     <div className="bg-card rounded-xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-border group">
       <div className="relative aspect-square bg-secondary/20 p-4">
